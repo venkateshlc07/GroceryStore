@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class GroceryStoreApplication {
-
+   //main
 	public static void main(String[] args) {
 		Receipt r = new Receipt(new ConsolePrinter());
 		r.add("Cookies", new Money(5, "$"));
