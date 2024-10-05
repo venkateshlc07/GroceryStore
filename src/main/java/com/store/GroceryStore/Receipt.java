@@ -11,8 +11,8 @@ public class Receipt {
         this.printer = p;
         items = new ArrayList<>();
     }
-    public void add(String itemName, Money amount){
-        items.add(new Item(itemName, amount));
+    public void add(String itemName, int qty, Money amount){
+        items.add(new Item(itemName, qty, amount));
     }
 
     public void print(){

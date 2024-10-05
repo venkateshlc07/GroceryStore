@@ -8,9 +8,9 @@ public class GroceryStoreApplication {
    //main
 	public static void main(String[] args) {
 		Receipt r = new Receipt(new ConsolePrinter());
-		r.add("Cookies", new Money(5, "$"));
-		r.add("Jam", new Money(5, "$"));
-		r.add("Cookies", new Money(5, "$"));
+		r.add("Cookies", 2, new Money(5, "$"));
+		r.add("Jam", 1, new Money(5, "$"));
+		r.add("Cookies", 1, new Money(5, "$"));
 
 		r.print();
 		r.total();

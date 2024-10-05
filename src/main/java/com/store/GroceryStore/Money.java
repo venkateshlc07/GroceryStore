@@ -14,8 +14,8 @@ public class Money {
 
     }
 
-    public void shareTo(ReceiptMetrics receiptMetrics) {
-        receiptMetrics.add(amount);
+    public void shareTo(int qty, ReceiptMetrics receiptMetrics) {
+        receiptMetrics.add(qty, amount);
     }
 }
 
